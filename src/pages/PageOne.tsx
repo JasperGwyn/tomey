@@ -31,13 +31,14 @@ import {
 import MintButton from "../components/MintButton";
 
 const connection = new anchor.web3.Connection(
-  "https://api.mainnet-beta.solana.com/"
+  //"https://api.mainnet-beta.solana.com/"
+  "https://api.devnet.solana.com/"
 );
 
 const CANDYMACHINE = {
-  id: new PublicKey("ArmgCzuYxPw8Co49gr6LKTwPoj4XoeUZT4EowZjcttTf"),
-  treasury: new PublicKey("D3euPBeUybyCKv3YUs6ae58aFKdhisM3YXiFeYi1J8vF"),
-  config: new PublicKey("5h6CQN2BZZfxHXeaHq2WLMKotnh3wNKbbBLMi6v4zGQ1"),
+  id: new PublicKey("Bu4zb8uvfA3F5SEzkvyFCwkFhB4yG51piUE4GGLbkm1n"),
+  treasury: new PublicKey("HejLuohXenFxU99ERaij3FWHpi7mfJiNZYDnPUdQL9sT"),
+  config: new PublicKey("8EXATMTMkE3BRZK9hg6cfBR2BiDUFBubzY5GTV6Ts4vS"),
   startDate: 1632535200,
   txTimeout: 30000,
 };
@@ -107,7 +108,7 @@ const TierOne = () => {
           <Box>
             <Box sx={{ marginBottom: 12 }}>
               <Typography component="h1" variant="h2">
-                Not all dogs who wander are lost
+                A Wandering Dog
               </Typography>
             </Box>
           </Box>
